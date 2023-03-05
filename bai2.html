@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2.1</title>
+</head>
+<body>
+<h3>tuổi đi học của học sinh lớp 10</h3>
+<input type="number" id="tuoi">
+<input type="button" onclick="kiemtra()" id="kiemtra">
+<p id="an"></p>
+</body>
+<script>
+    function kiemtra() {
+    let a = +document.getElementById("tuoi").value;
+    if (a >= 15) {
+        document.getElementById("an").innerHTML="du tuoi di hoc lop 10"
+    }else
+    {
+        document.getElementById("an").innerHTML=" khong du tuoi di hoc lop 10"
+    }
+    }
+</script>
+</html>
