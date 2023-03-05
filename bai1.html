@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1.1</title>
+</head>
+<body>
+<h3>cho 2 số a và b</h3>
+<input type="text" id="a">
+<input type="text" id="b">
+<input type="button" id="check" onclick="check()">
+<p id="in"></p>
+</body>
+<script>
+    function check(){
+  let x = +document.getElementById("a").value
+  let y = +document.getElementById("b").value
+  if (x % y == 0) {
+    document.getElementById("in").innerHTML="a chia het"
+  } else {
+      document.getElementById("in").innerHTML="a khong chia het"
+  }
+}
+</script>
+</html>
